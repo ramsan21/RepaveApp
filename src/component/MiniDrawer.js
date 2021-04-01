@@ -10,6 +10,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import { BrowserRouter as Router, withRouter } from "react-router-dom";
 import { SideBar } from "../static/SideBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import { Avatar } from "@material-ui/core";
 import {
   AppBar,
   Toolbar,
@@ -38,6 +39,7 @@ function MiniDrawer(props) {
           [classes.appBarShift]: opensidebar,
         })}
       >
+        
         <Toolbar>
           <IconButton
             color="inherit"
@@ -76,6 +78,13 @@ function MiniDrawer(props) {
               />
             </div>
           )}
+          <Box display="flex" justifyContent="space-evenly" alignItems="right">
+            <Avatar />
+
+            <Typography variant="h5" color="secondary">
+              Rober Lim
+            </Typography>
+          </Box>
         </Toolbar>
       </AppBar>
 

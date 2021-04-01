@@ -16,6 +16,7 @@ import {
   CheckCircleOutline,
   Stop,
   DoneOutline,
+  Error
 } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
