@@ -39,7 +39,6 @@ function MiniDrawer(props) {
           [classes.appBarShift]: opensidebar,
         })}
       >
-        
         <Toolbar>
           <IconButton
             color="inherit"
@@ -60,7 +59,7 @@ function MiniDrawer(props) {
               variant="h6"
               noWrap
             >
-              JPMORGAN CHASE & Co.
+              ABC & Co.
             </Typography>
           </Hidden>
           {!opensidebar && (
@@ -78,13 +77,6 @@ function MiniDrawer(props) {
               />
             </div>
           )}
-          <Box display="flex" justifyContent="space-evenly" alignItems="right">
-            <Avatar />
-
-            <Typography variant="h5" color="secondary">
-              Rober Lim
-            </Typography>
-          </Box>
         </Toolbar>
       </AppBar>
 

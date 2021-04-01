@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const PaveRepave = () => {
+export const PaveRepavePage = () => {
   const tableOptions = {
     ...options,
     search: false,

@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { Home } from "../pages/Home";
-import { PaveRepave } from "../pages/PaveRepave";
+import { PaveRepavePage } from "../pages/PaveRepave";
 import { AdminSetupPage } from "../pages/AdminSetupPage";
 import { DepartmentSetupPage } from "../pages/DepartmentSetupPage";
 import { SubDepartmentSetupPage } from "../pages/SubDepartmentSetupPage";
@@ -25,8 +25,8 @@ export const Routing = (props) => {
         <SimpleAppBar />
         {/* <div className={toolbar} /> */}
         <Switch>
-          <Route exact path="/" component={PaveRepave} />
-          <Route path="/PaveRepave" exact component={PaveRepave} />
+          <Route exact path="/" component={PaveRepavePage} />
+          <Route path="/paverepave" exact component={PaveRepavePage} />
           <Route path="/device" component={DeviceSetupPage} />
           <Route path="/inventory" component={SubDepartmentSetupPage} />
           <Route path="/dc-details" component={DepartmentSetupPage} />

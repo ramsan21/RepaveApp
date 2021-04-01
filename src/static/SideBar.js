@@ -1,27 +1,35 @@
 import React from "react";
-import { PaveRepave } from "../pages/PaveRepave";
+import { PaveRepavePage } from "../pages/PaveRepave";
 import { AdminSetupPage } from "../pages/AdminSetupPage";
 import { DepartmentSetupPage } from "../pages/DepartmentSetupPage";
 import { SubDepartmentSetupPage } from "../pages/SubDepartmentSetupPage";
 import { DeviceSetupPage } from "../pages/DeviceSetupPage";
-import { Settings, DesktopMac, Store, AccountBox } from "@material-ui/icons";
+
+import {
+  Dns,
+  DesktopMac,
+  Build,
+  AddToQueue,
+  DonutLarge,
+  Store,
+} from "@material-ui/icons";
 
 export const SideBar = [
   {
     id: 1,
-    menuName: "Pave & Repave",
+    menuName: "DC Pave Repave",
     menuDescription: "Pave & Repave DC",
-    path: "/PaveRepave",
-    component: PaveRepave,
+    path: "/paverepave",
+    component: PaveRepavePage,
     exact: true,
-    icon: <Settings style={{ color: "white" }} />,
+    icon: <Dns style={{ color: "white" }} />,
     submenu: [],
   },
   {
     id: 2,
-    menuName: "Device Setup",
+    menuName: "DC Pave Repave Tracking",
     menuDescription: "Device mac id setup menus",
-    path: "/device",
+    path: "/tracking",
     component: DeviceSetupPage,
     exact: true,
     icon: <DesktopMac style={{ color: "white" }} />,
@@ -29,9 +37,9 @@ export const SideBar = [
   },
   {
     id: 3,
-    menuName: "Invenory Setup",
-    menuDescription: "Inventory setup menus",
-    path: "/inventory",
+    menuName: "Health & Compliance",
+    menuDescription: "Health and Compliance",
+    path: "/healthcompliance",
     component: DeviceSetupPage,
     exact: true,
     icon: <Store style={{ color: "white" }} />,
@@ -39,9 +47,9 @@ export const SideBar = [
   },
   {
     id: 4,
-    menuName: "DC Details",
+    menuName: "monitoring",
     menuDescription: "Dc Details",
-    path: "/dc-details",
+    path: "/monitoring",
     component: DeviceSetupPage,
     exact: true,
     icon: <DesktopMac style={{ color: "white" }} />,
@@ -49,9 +57,9 @@ export const SideBar = [
   },
   {
     id: 5,
-    menuName: "Domain",
-    menuDescription: "XYZ Domain",
-    path: "/domain",
+    menuName: "Tools",
+    menuDescription: "Tools",
+    path: "/tools",
     component: DeviceSetupPage,
     exact: true,
     icon: <Store style={{ color: "white" }} />,

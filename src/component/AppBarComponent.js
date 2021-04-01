@@ -44,7 +44,7 @@ function AppBarComponent() {
           </IconButton>
           <Hidden only={["md", "sm"]}>
             <Typography variant="h6" noWrap>
-              JPMORGAN CHASE & Co.
+              ABC & Co.
             </Typography>
           </Hidden>
           <InputBase placeholder="Search for products, brands and more" />
